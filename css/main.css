@@ -1,3 +1,127 @@
 /*
  * Estilos de tu proyecto
  */
+
+ * {
+ 	box-sizing: border-box;
+ }
+
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+
+}
+
+ #contenedor {
+ 	margin-top: 0;
+ 	margin-left: 0;
+ 	height: 700px;
+ 	width: 100%;
+ 	background-image: url(../assets/images/hero.gif);
+	background-size: 100%;
+	background-repeat: no-repeat;
+ }
+
+ nav img {
+ 	max-width: 100px;
+ }
+
+#input {
+	float: right;
+	background-color: white;
+	padding: 70px 65px;
+	height: 420px;
+	width: 540px;
+}
+
+
+ #box-two {
+ 	margin-top: 0;
+ 	width: 100%;
+    background-image: linear-gradient(#76278F, #2B1E66);
+ }
+
+ #text {
+ 	width: 650px;
+ 	padding-top: 90px;
+ 	color: white;
+ 	padding-left: 150px;
+ 	padding-right: 60px;
+ 	padding-bottom: 40px;
+ 	letter-spacing: .5px;
+ 	margin: 0;
+ 	display: inline-block;
+ }
+
+ h3 {
+ 	margin: 0;
+ 	text-transform: uppercase;
+ 	font-size: 28px;
+ 	font-weight: normal;
+ }
+
+#box-two p {
+	margin-bottom: 70px;
+	font-weight: 300;
+}
+
+#img {
+	float: right;
+	width: 490px;
+	height: 500px;
+	background-image: url(../assets/images/phone.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-right: 140px;
+ 	margin-top: 70px;
+}
+
+
+#box-three {
+	margin: 0;
+}
+
+iframe {
+	float: right;
+	border: none;
+	height: 460px;
+	width: 838px;
+	margin: 0;
+}
+.parrafos {
+	display: inline-block;
+	width: 460px;
+	padding: 30px 50px;
+	height: 460px;
+}
+
+.parrafos h3, .parrafos p:first-child {
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 500;
+}
+
+.parrafos p:first-child {
+	font-size: 12px;
+}
+
+#box-four iframe {
+	float: left;
+}
+
+
+ul {
+	margin: 0;
+	list-style: none;
+}
+
+footer {
+	margin: 0;
+	background-color: #333447;
+	color: white;
+}
+
+footer img {
+	max-width: 100px;
+}
+
