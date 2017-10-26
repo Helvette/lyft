@@ -22,19 +22,148 @@ body {
 	background-repeat: no-repeat;
  }
 
- nav img {
- 	max-width: 100px;
+
+#navigation {
+	width: 100%;
+	height: 115px;
+}
+
+#navigation img {
+ 	max-width: 64px;
  }
 
-#input {
+#navigation ul {
 	float: right;
-	background-color: white;
-	padding: 70px 65px;
-	height: 420px;
-	width: 540px;
+	list-style: none;
+	padding: 0;
+	margin-right: 150px;
+}
+
+#navigation li {
+	display: inline-block;
+}
+
+#navigation a {
+	display: block;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	padding: 24px;
 }
 
 
+
+
+
+
+
+
+
+#white-box {
+	clear: right;
+	float: right;
+	background-color: white;
+	padding: 65px 65px;
+	height: 420px;
+	width: 540px;
+	letter-spacing: .5px;
+}
+
+
+/* Caja Blanca con el input */ 
+#white-box h1, #white-box h2 {
+	color: #352384;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+#white-box p:first-of-type {
+	color: #352384;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+input {
+	border: none;
+	width: 427px;
+	padding: 23px 12px 5px 0;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 24px;
+	/* placeholdercolor: #bfc7d9; */
+	border-bottom: 1px solid #352384;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	color: #bfc7d9;
+}
+
+.buttom {
+	width: 180px;
+	height: 52px;
+	margin-right: 0;
+	float: left;
+}
+
+.first a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	line-height: 52px;
+	text-align: center;
+	background-color: #ff00bf;
+	border-radius: 10px;
+	font-weight: normal;
+	
+}
+
+.second {
+	text-align: center;
+
+}
+
+.second a {
+	display: block;
+	color: #728099;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 52px;
+}
+
+.second a:hover {
+	color: #b30086;
+}
+
+.sub-text {
+	clear: both;
+	font-size: 10px;
+	line-height: 14px;
+	color: #728099;
+	font-weight: 300;
+}
+
+.sub-text a {
+	text-decoration: none;
+	color: #ff00bf;
+}
+
+.sub-text a:hover {
+	color: #b30086;
+	text-decoration: underline;
+}
+
+
+/*Párrafos con el celular al lado */
  #box-two {
  	margin-top: 0;
  	width: 100%;
@@ -109,19 +238,69 @@ iframe {
 	float: left;
 }
 
-
-ul {
-	margin: 0;
-	list-style: none;
-}
-
 footer {
 	margin: 0;
 	background-color: #333447;
+	letter-spacing: .5px;
+	text-align: center;
+	color: white;
+	padding-bottom: 16px;
+}
+
+#listas {
+	padding-top: 50px;
 	color: white;
 }
 
-footer img {
-	max-width: 100px;
+#listas img {
+	max-width: 135px;
 }
+
+#listas ul {
+	margin: 0 45px;
+	list-style: none;
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+}
+
+#listas h3 a { 
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+	padding-bottom: 8px;
+}
+
+#listas li {
+	margin: 16px;
+}
+
+#listas li a {
+	text-decoration: none;
+	color: white;
+}
+
+#listas li a:hover {
+	text-decoration: underline;
+	color: #FF00BF;
+}
+
+#listas h3 a:hover {
+	color: white;
+}
+
+#icons ul {
+	list-style: none;
+	padding: 0;
+}
+
+#icons ul li {
+	display: inline-block;
+}
+
+hr {
+	width: 60%;
+}
+
+
 
