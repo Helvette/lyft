@@ -14,11 +14,10 @@
 	<link rel="icon" type="image/png" href="assets/images/lyft-favicon.png">
 </head>
 <body>
-	
-	<!-- fondo -->
-	<nav id="contenedor">
-	 		<div id="navigation">
-			<img src="assets/images/logo-white.png" alt="">
+	<!-- Primera sección de la página, con un gif de fondo, contiene barra de navegación, y caja del input -->
+	<div id="principal">
+	 		<nav>
+			<img src="assets/images/logo-white.png" alt="Lyft">
 
 			<ul>
 				<li><a href="#">Drive</a></li>
@@ -26,25 +25,25 @@
 				<li><a href="#">Help</a></li>
 				<li><a href="#"><p>Log in</p></a></li>
 			</ul>
-			</div>
+			</nav>
 
 			<div id="white-box">
 			<h1>Turn miles</h1>
 			<h2>into money</h2>
-			<p id="subtitle">Sign up to drive with Lyft.</p>
+			<p>Sign up to drive with Lyft.</p>
+			<!-- Input -->
 			<div id="input"><input type="text" placeholder="Phone Number"></div>
-			<!-- botón -->
+			<!-- Botones del input -->
 			<p class="first buttom"><a href="#">Become a Driver</a></p>
 			<p class="second buttom"><a href="#">Sign Up to Ride</a></p>
 			<p class="sub-text">Already applied? <a href="#">Check the status of your application here.</a></p>
 			<p class="sub-text">Earn money for inviting friends to drive. <a href="#">Learn more</a></p>
-				<!-- input -->
 			</div>
-		</nav>
-		<!-- inputs -->
+		</div>
+		
 	
-
-	<div id="box-two">
+	<!-- Segunda sección de la página. 3 Párrafos con celular al lado -->
+	<section id="box-two">
 		<div id="text">
 			<h3>A ride in minutes</h3>
 			<p>Request a ride and you’ll be on your way in minutes. Request. Ride. Repeat.</p>
@@ -56,19 +55,15 @@
 			<h3>Happy Riders.</h3>
 			<p>Ride with us and you’ll see why 9 out of 10 rides end with five stars.</p>
 		</div>
-
-		<div id="img">
-			<!--<img src="assets/images/phone.png" alt="">-->
-		</div>
-	</div>
+	</section>
 
 
+	<!-- Tercera sección de la página, primer video y texto -->
 	<section id="box-three">
-
 		<div>
 			<iframe src="https://www.youtube.com/embed/fLSmUWOYpKw" allowfullscreen></iframe>
 		</div>
-		<div class="parrafos">
+		<div class="paragraph">
 			<p>Watch</p>
 			<h3>Amplify your ride</h3>
 			<p>Lyft's new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the devices makes it easy for passengers and drivers to fin each other.</p>
@@ -76,12 +71,14 @@
 
 	</section>
 
+
+	<!-- Cuarta sección de la página, segundo video y texto -->
 	<section id="box-four">
 
 		<div>
 			<iframe src="https://www.youtube.com/embed/v8nyGzOLsdw" allowfullscreen></iframe>
 		</div>
-		<div class="parrafos">
+		<div class="paragraph">
 			<p>Watch</p>
 			<h3>June</h3>
 			<p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride - and sharing her life, too.</p>
@@ -90,21 +87,25 @@
 	</section>
 
 
-
+	<!-- Quinta sección de la página, tercer video y texto -->
 	<section id="box-five">
 
 		<div>
 			<iframe src="https://www.youtube.com/embed/xj2VWLV0xCU"allowfullscreen></iframe>
 		</div>
-		<div class="parrafos">
+		<div class="paragraph">
 			<p>Watch</p>
 			<h3>A good thing going</h3>
 			<p>Launching on TV and online, "Ride on the Bright Side" shows how Lyft continues to prioritize happy drivers, short ETAs, and safety.</p>
 		</div>
+
 	</section>
 
+	<!-- Footer -->
 	<footer>
-		<div id="listas">
+
+		<!-- Log in, Partner, Learn -->
+		<div id="list">
 			<ul>
 				<li><h3><a href="#">Log in</a></h3></li>
 				<li><a href="#">Help</a></li>
@@ -129,15 +130,16 @@
 				<li><a href="#">Careers</a></li>
 			</ul>
 
-
+			<!-- Apple, Google, Microsoft -->
 			<ul>
-				<li><a href="#"><img src="assets/images/apple-store.svg" alt=""></a></li>
-				<li><a href="#"><img src="assets/images/google-play.png" alt=""></a></li>
-				<li><a href="#"><img src="assets/images/microsoft.png" alt=""></a></li>
+				<li><a href="#"><img src="assets/images/apple-store.svg" alt="Apple Store"></a></li>
+				<li><a href="#"><img src="assets/images/google-play.png" alt="Google Play"></a></li>
+				<li><a href="#"><img src="assets/images/microsoft.png" alt="Microsoft"></a></li>
 			</ul>
 
 			</div>
 
+		<!-- Íconos redes sociales -->
 		<div id="icons">
 			<ul>
 				<li><a href="#"><span class="icon-facebook"></span></a></li>
@@ -146,12 +148,11 @@
 			</ul>
 			<hr>
 		</div>
-
+		
+		<!-- Copyright -->
 		<p>© 2017 Lyft, Inc.TermsPrivacy</p>
 		
 	</footer>
-
-	<script src="https://use.fontawesome.com/69bfbe7ab9.js"></script>
 </body>
 </html>
 
