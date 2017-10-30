@@ -5,10 +5,11 @@
 body {
 	margin: 0;
 	font-family: "Montserrat", sans-serif;
-
 }
 
- #contenedor {
+/* Primera sección de la página, con un gif de fondo, contiene
+barra de navegación, y caja del input */
+ #principal {
  	margin-top: 0;
  	margin-left: 0;
  	height: 535px;
@@ -16,23 +17,22 @@ body {
  	background-image: url(../assets/images/hero.gif);
 	background-size: 100%;
 	background-position: center;
- }
+}
 
-
-#navigation {
+nav {
 	width: 100%;
 	height: 115px;
 	padding-top: 11px;
 	padding-bottom: auto;
 }
 
-#navigation img {
+nav img {
  	max-width: 64px;
  	margin-top: 17.83px;
  	margin-left: 80px;
   }
 
-#navigation ul {
+nav ul {
 	float: right;
 	margin: 0;
 	padding: 0;
@@ -41,11 +41,11 @@ body {
 	letter-spacing: 1px;
 }
 
-#navigation li {
+nav li {
 	display: inline-block;
 }
 
-#navigation a {
+nav a {
 	display: block;
 	line-height: 27px;
 	font-size: 18px;
@@ -54,19 +54,19 @@ body {
 	padding: 24px;
 }
 
-#navigation a:hover {
+nav a:hover {
 	color: #ff00bf;
 }
 
-#navigation li:last-of-type a {
+nav li:last-of-type a {
 	padding: 24px 16px;
 }
 
-#navigation li:last-of-type a:hover {
+nav li:last-of-type a:hover {
 	color: white;
 }
 
-#navigation li p {
+nav li p {
 	margin: 0;
 	line-height: 27px;
 	padding: 8px 16px;
@@ -75,10 +75,7 @@ body {
 }
 
 
-
-
-
-
+/* Caja Blanca con el input */
 #white-box {
 	clear: right;
 	float: right;
@@ -88,9 +85,7 @@ body {
 	width: 540px;
 	letter-spacing: .5px;
 }
-
-
-/* Caja Blanca con el input */ 
+ 
 #white-box h1, #white-box h2 {
 	color: #352384;
 	text-transform: uppercase;
@@ -118,7 +113,6 @@ input {
 	font-weight: 300;
 	letter-spacing: 1px;
 	line-height: 24px;
-	/* placeholdercolor: #bfc7d9; */
 	border-bottom: 1px solid #352384;
 }
 
@@ -185,7 +179,7 @@ input::placeholder {
 }
 
 
-/*Párrafos con el celular al lado */
+/* Segunda sección de la página. 3 Párrafos con celular al lado. */
  #box-two {
  	margin-top: 0;
  	width: 100%;
@@ -229,11 +223,13 @@ input::placeholder {
 }
 
 
+/* Tercera sección de la página */
 #box-three {
 	margin: 0;
 	background-color: white;
 }
 
+/* Videos 3ra, 4ta y 5ta sección */
 iframe {
 	float: right;
 	border: none;
@@ -241,27 +237,31 @@ iframe {
 	width: 838px;
 	margin: 0;
 }
-.parrafos {
+
+/* Párrafos 3ra, 4ta y 5ta sección*/
+.paragraph {
 	display: inline-block;
 	width: 460px;
 	padding: 30px 50px;
 	height: 460px;
 }
 
-.parrafos h3, .parrafos p:first-child {
+.paragraph h3, .paragraph p:first-child {
 	text-transform: uppercase;
 	margin: 0;
 	font-weight: 500;
 }
 
-.parrafos p:first-child {
+.paragraph p:first-child {
 	font-size: 12px;
 }
 
+/* Video 4ta sección */ 
 #box-four iframe {
 	float: left;
 }
 
+/* Footer */
 footer {
 	margin: 0;
 	background-color: #333447;
@@ -270,7 +270,7 @@ footer {
 	padding-bottom: 16px;
 }
 
-#listas {
+#list {
 	padding-top: 40px;
 	color: white;
 	padding-bottom: 50px;
@@ -278,11 +278,11 @@ footer {
 	padding-left: 20px;
 }
 
-#listas img {
+#list img {
 	max-width: 135px;
 }
 
-#listas ul {
+#list ul {
 	margin: 0 55px;
 	list-style: none;
 	display: inline-block;
@@ -290,15 +290,15 @@ footer {
 	padding: 0;
 }
 
-#listas li {
+#list li {
 	margin: 25px;
 }
 
-#listas ul:last-of-type {
+#list ul:last-of-type {
 	margin-left: 100px;
 }
 
-#listas li a {
+#list li a {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 21px;
@@ -306,7 +306,7 @@ footer {
 	color: white;
 }
 
-#listas h3 a { 
+#list h3 a { 
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 500;
@@ -314,12 +314,12 @@ footer {
 	letter-spacing: 1px;
 }
 
-#listas li a:hover {
+#list li a:hover {
 	text-decoration: underline;
 	color: #FF00BF;
 }
 
-#listas h3 a:hover {
+#list h3 a:hover {
 	color: white;
 }
 
