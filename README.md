@@ -1,26 +1,4 @@
-# Lyft
-
-* **Track:** _Common Core_
-* **Curso:** _Creando tu primer sitio web interactivo_
-* **Unidad:** _Maquetado web con HTML & CSS_
-
-***
-
-Para completar este reto, hemos creado este repositorio boilerplate (plantilla
-inicial) con todos los recursos que necesitas. Esto incluye imágenes y
-estructura de carpetas y archivos donde colocarás tu código.
-
-## Flujo de trabajo
-
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
-
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/lyft.git
-   ```
+# Maquetado de Lyft, ejercicio para Laboratoria
 
 ## Objetivo
 
@@ -29,64 +7,16 @@ a lograr:
 
 ![Lyft Website](docs/fullpage.png)
 
-## Consideraciones
+## Realización
 
-* Encontrarás un archivo base `index.html` en el cual deberás escribir la
-  estructura de tu proyecto y enlazar tus archivos de estilos (CSS).
+Para la realización del reto, cree una página web dividida en 7 secciones, cada una con una id diferente para poder identificarlas mejor a la hora de manipular su estilo: 
 
-* En la carpeta `css` tendrás un archivo base `main.css` donde agregarás los
-  estilos necesarios para tu proyecto:
+* La primera sección es un `div` de id `principal`, esta contiene una barra `nav` transparente con el logo y links, un `div` con id `white-box` de fondo blanco con título, un input, párrafos y botones dentro. Esta sección tiene de `background` un gif.
 
-* Dentro de la carpeta `assets` se encuentra la carpeta `images` donde
-  encontrarás todas las imágenes necesarias para completar tu proyecto.
+* La segunda sección es un `section` de id `box-two`. Con 3 párrafos y sus respectivos títulos alineados a la izquierda y un div a su derecha que no contiene nada pero tiene de fondo la imagen de un celular. A esta sección le dimos un fondo en gradiente, y además una sombra para que arriba (y por encima de la sección anterior) diera el efecto se que el gradiente sigue hasta la transparencia.
 
-* Deberás **actualizar el archivo `README.md`** explicando el contenido de tu
-  repositorio.
+* La tercera, cuarta y quinta sección son `section id="box-three"`, `section id="box-four"` y `section id="box-five"`, cada una contiene un video (que determina la altura de la sección) y a su lado un párrafo descriptivo de dicho video. El alineado del video es hacia la derecha a excepción de `#box-four` donde se alinea a la izquierda.
 
-* Esta web utiliza la tipografía `Montserrat`.
+* La sexta y última sección es el `footer`, dividido en un div `#list`, un div `#icons`, una `hr` y un `p` para poder manipular mejor el estilo de cada uno, `#list` contiene 4 listas con links (la última con imágenes para adquirir la app en diferentes sistemas), `#icons` contiene una lista horizontal con links a redes sociales y `p` el mensaje de Copyright.
 
-* La paleta de colores puedes obtenerla inspeccionado el sitio original, pero
-  para ganar tiempo, puedes usar los siguientes:
-
-  - Botones, hover: `#FF00BF`
-  - Fondo de `footer`: `#333447`
-  - Título del formulario: `#352384`
-  - Texto del formulario: `#728099`
-  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);`
-
-* Para el footer, deberás tomar en cuenta que tiene un hover y se ve como en la
-  siguiente imagen:
-
-  ![Lyft - Footer](docs/footer.gif)
-
-  Además, los íconos deberás obtenerlo de `Icomoon`.
-
-* Para este reto, encontrarás ciertas cosas que probablemente aun no has visto
-  en clase (formularios, videos de Youtube). No te preocupes, estamos seguros
-  que los afrontarás con éxito, de igual forma aquí unos tips:
-
-  - Estos son los videos de Youtube:
-    * https://www.youtube.com/watch?v=fLSmUWOYpKw
-    * https://www.youtube.com/watch?v=V7j8Aqxmbs8
-    * https://www.youtube.com/watch?v=xj2VWLV0xCU
-  - Para agregar los videos, averigua sobre la etiqueta `iframe`.
-  - Para el formulario, revisa las etiquetas como `form` e `input`.
-
-* Puedes ver el [sitio original](https://www.lyft.com/), sin embargo, su diseño
-  ya ha cambiado en ciertas partes, así que tu fuente de verdad es la imagen que
-  muestra el objetivo de este reto.
-
-  > Nota: El sitio original tiene ciertos efectos y funcionalidades que
-están fuera del alcance de este reto. Enfócate en obtener la maquetación
-lo más parecido posible, usando lo aprendido en clase ;)
-
-## A tener en cuenta
-
-Este reto será evaluado sobre lo siguiente:
-
-* Pixel perfect (replicar el diseño con exactitud)
-* Estructura de carpetas y archivos
-* Nombramiento de clases, id, etc
-* Indentación
-* Archivo `README.md` actualizado y correctamente redactado
-* Uso de comentarios para hacer tu código más legible
+Para el CSS traté de usar menor cantidad de id o clases, así que el plan fue acceder a los diferentes elementos del HTML a través de otros selectores y pseudoselectores, como el de descendencia, first-of-type o first-child, sin contar los :hover o los :focus para estados específicos de mis links o inputs.
